@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { BsSliders } from 'react-icons/bs'
+import Logo from '../../../public/svg/Logo.svg'
 import Link from 'next/link'
 
 export const Header = () => (
@@ -8,7 +9,7 @@ export const Header = () => (
     <header className="block py-5 bg-oceania-900">
       <div className="container flex flex-row gap-2 px-4 mx-auto">
         <div className="inline-flex items-center justify-center w-10 h-10 text-lg text-white bg-indigo-500 rounded">
-          &times;
+          <Logo />
         </div>
         <div className="inline-flex flex-row items-center gap-2 px-4 text-indigo-200 bg-indigo-800 rounded">
           Acme
