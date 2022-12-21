@@ -17,6 +17,9 @@ module.exports = {
           700: '#8A86B6',
           800: '#3D3971',
           900: '#16114E',
+        },
+        'airbnb': {
+          DEFAULT: '#FF385C'
         }
       }
     },

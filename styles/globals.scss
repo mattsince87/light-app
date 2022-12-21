@@ -5,3 +5,10 @@
 body {
   background: #F0F3FF;
 }
+
+input:checked + div {
+  @apply border-blue-500;
+}
+input:checked + div svg {
+  @apply block;
+}

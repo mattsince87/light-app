@@ -1,6 +1,5 @@
 import React from 'react'
 import { Dropdown } from '@/ui/atoms/dropdown/Dropdown'
-// import { MdKeyboardArrowDown } from 'react-icons/md'
 import { BsSliders } from 'react-icons/bs'
 import Logo from '../../../public/svg/Logo.svg'
 import Link from 'next/link'
@@ -12,12 +11,6 @@ export const Header = () => (
         <div className="inline-flex items-center justify-center w-10 h-10 text-lg text-white bg-indigo-500 rounded">
           <Logo />
         </div>
-        {/* <div className="inline-flex flex-row items-center gap-2 px-4 text-indigo-200 bg-indigo-800 rounded">
-          Acme
-          <span>
-            <MdKeyboardArrowDown className="text-lg" />
-          </span>
-        </div> */}
         <Dropdown />
         <nav className="inline-flex">
           <ul className="inline-flex flex-row">
@@ -97,8 +90,8 @@ export const Header = () => (
     </header>
 
     {/* 
-            S U B  H E A D E R
-          */}
+      S U B  H E A D E R
+    */}
     <header className="block w-full py-5 bg-white shadow-md">
       <div className="container flex flex-row gap-2 px-4 mx-auto">
         <nav className="inline-flex">
