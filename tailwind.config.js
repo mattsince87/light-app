@@ -12,6 +12,7 @@ module.exports = {
         'oceania': {
           50: '#F0F3FF',
           300: '#CCCBDE',
+          400: '#7F7CA5',
           600: '#8F8CB2',
           700: '#8A86B6',
           800: '#3D3971',
