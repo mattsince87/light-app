@@ -1,5 +1,6 @@
 import { Tip } from '@/ui/atoms/tip/Tip'
 import { Button } from '@/ui/atoms/button/Button'
+import { Stack } from '@/ui/molecules/stack/Stack'
 import { InvoiceRow } from '@/ui/molecules/row/InvoiceRow'
 import { Pagination } from '@/ui/molecules/pagination/Pagination'
 
@@ -20,6 +21,8 @@ export default function Home() {
         </div>
 
         <div className="col-span-5">
+          <h2 className="heading">Stacks</h2>
+          <Stack />
           <Tip>
             You have selected more than one invoice, to approve multiple
             invoices at the same time click the “Bulk approve” button.

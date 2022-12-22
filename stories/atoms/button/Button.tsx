@@ -9,6 +9,7 @@ import {
 interface ButtonProps {
   classes?: string
   primary?: boolean
+  color?: null | 'green' | 'red'
   size?: 'default' | 'large'
   icon?: 'none' | 'Forward' | 'Stack' | 'Like' | 'Delete'
   label: string
@@ -16,7 +17,8 @@ interface ButtonProps {
 }
 
 export const Button = ({
-  primary = true,
+  primary = false,
+  color = null,
   size = 'default',
   icon = 'none',
   classes,
@@ -25,7 +27,7 @@ export const Button = ({
 }: ButtonProps) => {
   const mode = primary
     ? 'bg-white text-oceania-800'
-    : 'bg-teal-500 text-emerald-50'
+    : 'bg-white text-oceania-800 shadow-lg'
 
   let sizing
   if (size === 'default') {
@@ -34,13 +36,21 @@ export const Button = ({
     sizing = 'px-5 py-3 text-xl'
   }
 
+  let theme
+  if (color === 'green') {
+    theme = 'bg-teal-500 text-emerald-50'
+  } else if (color === 'red') {
+    theme = 'bg-rose-500 text-rose-50'
+  }
+
   return (
     <button
       type="button"
       className={[
-        'rounded font-medium shadow-lg inline-flex items-center gap-2',
+        'rounded font-medium inline-flex items-center gap-2',
         mode,
         sizing,
+        theme,
         classes
       ].join(' ')}
       {...props}>

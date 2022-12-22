@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         'oceania': {
           50: '#F0F3FF',
+          100: '#E5E4F5',
           300: '#CCCBDE',
           400: '#7F7CA5',
           600: '#8F8CB2',

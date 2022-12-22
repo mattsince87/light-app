@@ -1,0 +1,58 @@
+.stackWrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: calc(16px + 1rem);
+
+  // Shadow Cards
+  .stackedCardBottom,
+  .stackedCardMiddle {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 32px;
+  }
+  .stackedCardBottom {
+    border-radius: 4px;
+    bottom: -16px;
+    left: 16px;
+    width: calc(100% - 32px);
+  }
+  .stackedCardMiddle {
+    border-radius: 6px;
+    bottom: -8px;
+    left: 8px;
+    width: calc(100% - 16px);
+  }
+
+  // Main Card
+  .stackedCard {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    gap: 8px;
+  }
+
+  // Icons
+  .icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Total
+  .total {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Actions
+  .actions {
+    display: flex;
+    gap: 4px;
+  }
+}

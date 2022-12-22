@@ -12,7 +12,7 @@ interface Props {
 
 export const InvoiceRow = ({ primary = true }: Props) => {
   return (
-    <div className="flex flex-row items-center justify-between w-full p-3 bg-white rounded shadow-md text-oceania-400">
+    <div className="flex flex-row items-center justify-between w-full p-3 bg-white rounded-[10px] shadow-md text-oceania-400">
       <div className="relative inline-flex items-center justify-center w-16 h-16 text-white rounded bg-airbnb">
         <Airbnb />
         <div className="absolute inline-flex justify-center items-center -right-[13px] w-[26px] h-[26px]">

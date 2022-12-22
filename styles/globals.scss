@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+// Global Typography
+@import 'typography';
+
 body {
   background: #F0F3FF;
 }
