@@ -12,7 +12,7 @@ export const Header = () => (
           <Logo />
         </div>
         <Dropdown />
-        <nav className="inline-flex">
+        <nav className="hidden md:inline-flex">
           <ul className="inline-flex flex-row">
             <li className="inline-flex items-center text-indigo-200">
               <Link
@@ -49,28 +49,28 @@ export const Header = () => (
         </nav>
         <nav className="inline-flex ml-auto">
           <ul className="inline-flex flex-row">
-            <li className="inline-flex items-center text-indigo-200">
+            <li className="items-center hidden text-indigo-200 md:inline-flex">
               <Link
                 href=""
                 className="inline-flex items-center h-full gap-1 px-4 bg-transparent rounded hover:text-white">
                 <BsSliders />
               </Link>
             </li>
-            <li className="inline-flex items-center text-indigo-200">
+            <li className="items-center hidden text-indigo-200 md:inline-flex">
               <Link
                 href=""
                 className="inline-flex items-center h-full gap-1 px-4 bg-transparent rounded hover:text-white">
                 Logs
               </Link>
             </li>
-            <li className="inline-flex items-center text-indigo-200">
+            <li className="items-center hidden text-indigo-200 md:inline-flex">
               <Link
                 href=""
                 className="inline-flex items-center h-full gap-1 px-4 bg-transparent rounded hover:text-white">
                 Liquidity
               </Link>
             </li>
-            <li className="inline-flex items-center text-indigo-200">
+            <li className="items-center hidden text-indigo-200 md:inline-flex">
               <Link
                 href=""
                 className="inline-flex items-center h-full gap-1 px-4 bg-transparent rounded hover:text-white">
@@ -92,7 +92,7 @@ export const Header = () => (
     {/* 
       S U B  H E A D E R
     */}
-    <header className="block w-full py-5 bg-white shadow-md">
+    <header className="block w-full py-5 overflow-x-scroll bg-white shadow-md">
       <div className="container flex flex-row gap-2 px-4 mx-auto">
         <nav className="inline-flex">
           <ul className="inline-flex flex-row">

@@ -12,7 +12,7 @@ interface Props {
 
 export const InvoiceRow = ({ primary = true }: Props) => {
   return (
-    <div className="flex flex-row items-center justify-between w-full p-3 bg-white rounded-[10px] shadow-md text-oceania-400">
+    <div className="flex flex-row items-center gap-4 md:justify-between  w-full p-3 bg-white rounded-[10px] shadow-md text-oceania-400">
       <div className="relative inline-flex items-center justify-center w-16 h-16 text-white rounded bg-airbnb">
         <Airbnb />
         <div className="absolute inline-flex justify-center items-center -right-[13px] w-[26px] h-[26px]">
@@ -21,13 +21,17 @@ export const InvoiceRow = ({ primary = true }: Props) => {
           <BsPatchCheckFill className="absolute text-teal-500 text-[20px]" />
         </div>
       </div>
-      <div className="flex flex-col gap-0 leading-5">
+      <div className="flex flex-col flex-auto gap-0 leading-5 md:flex">
         <span className="font-bold text-oceania-800">Airbnb</span>
         <span>Processed</span>
       </div>
-      <div>07/11/22</div>
-      <div className="font-bold text-oceania-800">$9999.99</div>
-      <div className="flex flex-row gap-1">
+
+      <div className="flex flex-col items-end gap-0 md:items-center md:flex-row md:gap-4 md:justify-between">
+        <div>07/11/22</div>
+        <div className="font-bold text-oceania-800">$9999.99</div>
+      </div>
+
+      <div className="flex-row hidden gap-1 md:flex">
         <span className="inline-flex items-center justify-center text-white bg-red-600 rounded w-7 h-7">
           <Hsbc />
         </span>
@@ -40,9 +44,9 @@ export const InvoiceRow = ({ primary = true }: Props) => {
           <Revolut />
         </span>
       </div>
-      <div>Revolut</div>
-      <div>Salary</div>
-      <div>
+      <div className="hidden md:inline-flex">Revolut</div>
+      <div className="hidden md:inline-flex">Salary</div>
+      <div className="hidden md:inline-flex">
         <Checkbox />
       </div>
     </div>
